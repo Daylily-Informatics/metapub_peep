@@ -13,9 +13,13 @@ Slim fastapi / jinja2 web application to expose metapub command line functionali
 ## Environment
 
 ```bash
-python -m venv env
-source env/bin/activate  
+python -m venv metapub_peep_venv
+source metapub_peep_venv/bin/activate  
 pip install fastapi uvicorn jinja2 MetaPub
 
 ```
 
+# Run It
+```bash
+uvicorn app.main:app --reload
+``` 
